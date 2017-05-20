@@ -1,29 +1,42 @@
-body {
+.body {
+    background-color: antiquewhite;
     height: 100vh;
-    padding: 0;
-    margin: 0;
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 4em;
+    font-family: DosisExtraLight, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: cadetblue;
+    height: 100%;
+    color: slateblue;
+    order: 2;
 }
 
 @media only screen and (min-device-width: 768px) {
-    body {
-        background-color: cornflowerblue;
+    .title {
+        font-size: 10em;
     }
 }
 
 .dots {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
+    margin-top: 15px;
+    order: 1;
 }
 
 @media only screen and (min-device-width: 768px) {
     .dots {
-        flex-direction: row;
+        margin-top: 30px;
     }
 }
 
@@ -35,14 +48,23 @@ body {
     min-height: 25px;
     min-width: 25px;
     background-color: white;
-    border: 1px solid grey;
-    border-radius: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .button-me,
+    .button-work,
+    .button-contact {
+        margin: 35px;
+    }
 }
 
 .background-me {
     height: 100vh;
     width: 100vw;
-    background-color: darkolivegreen;
+    background-color: turquoise;
     visibility: hidden;
     opacity: 0;
     position: absolute;
@@ -52,14 +74,104 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 15em;
+    font-size: 4em;
     font-family: DosisExtraLight, sans-serif;
     color: white;
-    transition: .3s ease;
+    transition: .2s ease;
     z-index: -1;
 }
 
 .button-me:hover + .background-me {
     visibility: visible;
     opacity: 1;
+    font-size: 4.5em;
 }
+
+@media only screen and (min-device-width: 768px) {
+    .background-me {
+        font-size: 15em;
+    }
+    .button-me:hover + .background-me {
+        visibility: visible;
+        opacity: 1;
+        font-size: 16em;
+    }
+}
+
+.background-work {
+    height: 100vh;
+    width: 100vw;
+    background-color: greenyellow;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 4em;
+    font-family: DosisExtraLight, sans-serif;
+    color: white;
+    transition: .3s ease;
+    z-index: -1;
+}
+
+.button-work:hover + .background-work {
+    visibility: visible;
+    opacity: 1;
+    font-size: 4.5em;
+
+}
+
+@media only screen and (min-device-width: 768px) {
+    .background-work {
+        font-size: 15em;
+    }
+
+    .button-work:hover + .background-work {
+        visibility: visible;
+        opacity: 1;
+        font-size: 16em;
+    }
+}
+
+.background-contact {
+    height: 100vh;
+    width: 100vw;
+    background-color: slateblue;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 4em;
+    font-family: DosisExtraLight, sans-serif;
+    color: white;
+    transition: .3s ease;
+    z-index: -1;
+}
+
+.button-contact:hover + .background-contact {
+    visibility: visible;
+    opacity: 1;
+    font-size: 4.5em;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .background-contact {
+        font-size: 15em;
+    }
+
+    .button-contact:hover + .background-contact {
+        visibility: visible;
+        opacity: 1;
+        font-size: 16em;
+    }
+}
+

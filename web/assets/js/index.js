@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
-    $(".button-work").on("click", function() {
-        $(this).css("background-color", "red");
+    $(".button-work, .button-me, .button-contact").hover(function() {
+        $(".title").hide();
+    });
+    $(".button-work, .button-me, .button-contact").mouseout(function() {
+        $(".title").show();
     });
 
 });
