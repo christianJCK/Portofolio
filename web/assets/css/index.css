@@ -42,12 +42,13 @@
 
 /* section */
 
+
 .button-me,
 .button-work,
 .button-contact {
-    min-height: 25px;
-    min-width: 25px;
-    background-color: white;
+    height: 25px;
+    width: 25px;
+    border: 2px solid white;
     border-radius: 15px;
     cursor: pointer;
     margin: 15px;
@@ -57,14 +58,27 @@
     .button-me,
     .button-work,
     .button-contact {
+        height: 30px;
+        width: 30px;
         margin: 35px;
+        border: 3px solid white;
+        background-image: linear-gradient(white, white);
+        background-repeat: no-repeat;
+        transition: background-size .5s, color .5s;
+        background-size: 0 0;
+        background-position: 50% 50%;
     }
+}
+
+.button-me:hover {
+    background-size: 100% 100%;
+    color: #fff;
 }
 
 .background-me {
     height: 100vh;
     width: 100vw;
-    background-color: turquoise;
+    background-color: greenyellow;
     visibility: hidden;
     opacity: 0;
     position: absolute;
@@ -89,19 +103,19 @@
 
 @media only screen and (min-device-width: 768px) {
     .background-me {
-        font-size: 15em;
+        font-size: 14em;
     }
     .button-me:hover + .background-me {
         visibility: visible;
         opacity: 1;
-        font-size: 16em;
+        font-size: 15em;
     }
 }
 
 .background-work {
     height: 100vh;
     width: 100vw;
-    background-color: greenyellow;
+    background-color: turquoise;
     visibility: hidden;
     opacity: 0;
     position: absolute;
@@ -127,13 +141,13 @@
 
 @media only screen and (min-device-width: 768px) {
     .background-work {
-        font-size: 15em;
+        font-size: 14em;
     }
 
     .button-work:hover + .background-work {
         visibility: visible;
         opacity: 1;
-        font-size: 16em;
+        font-size: 15em;
     }
 }
 
@@ -165,13 +179,13 @@
 
 @media only screen and (min-device-width: 768px) {
     .background-contact {
-        font-size: 15em;
+        font-size: 14em;
     }
 
     .button-contact:hover + .background-contact {
         visibility: visible;
         opacity: 1;
-        font-size: 16em;
+        font-size: 15em;
     }
 }
 
