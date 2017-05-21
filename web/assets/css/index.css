@@ -54,6 +54,13 @@
     margin: 15px;
 }
 
+.button-me:hover,
+.button-work:hover,
+.button-contact:hover {
+    background-size: 150% 150%;
+    color: white;
+}
+
 @media only screen and (min-device-width: 768px) {
     .button-me,
     .button-work,
@@ -62,17 +69,12 @@
         width: 30px;
         margin: 35px;
         border: 3px solid white;
-        background-image: linear-gradient(white, white);
+        background-image: radial-gradient(circle at center , white 50%, transparent 50%);;
         background-repeat: no-repeat;
-        transition: background-size .5s, color .5s;
+        transition: background-size .3s, color .3s;
         background-size: 0 0;
         background-position: 50% 50%;
     }
-}
-
-.button-me:hover {
-    background-size: 100% 100%;
-    color: #fff;
 }
 
 .background-me {
