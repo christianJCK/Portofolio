@@ -6,5 +6,4 @@ $(document).ready(function() {
     $(".button-work, .button-me, .button-contact").mouseout(function() {
         $(".title").show();
     });
-
 });

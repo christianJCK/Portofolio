@@ -93,7 +93,7 @@
     font-size: 4em;
     font-family: DosisExtraLight, sans-serif;
     color: white;
-    transition: .2s ease;
+    transition: .1s ease;
     z-index: -1;
 }
 
@@ -130,7 +130,7 @@
     font-size: 4em;
     font-family: DosisExtraLight, sans-serif;
     color: white;
-    transition: .3s ease;
+    transition: .1s ease;
     z-index: -1;
 }
 
@@ -169,7 +169,7 @@
     font-size: 4em;
     font-family: DosisExtraLight, sans-serif;
     color: white;
-    transition: .3s ease;
+    transition: .1s ease;
     z-index: -1;
 }
 
@@ -189,5 +189,9 @@
         opacity: 1;
         font-size: 15em;
     }
+}
+
+.content-me {
+    visibility: hidden;
 }
 
