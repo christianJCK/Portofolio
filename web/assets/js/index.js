@@ -17,11 +17,14 @@ $(document).ready(function() {
             $('.background-contact').css('visibility', '');
             $('.background-contact').css('opacity', '');
         }
-
-
     });
+
     $(".button-work, .button-me, .button-contact").mouseout(function() {
-        $(".title").show();
+        alert($(".button-work").css('visibility'));
+        if($(".button-work").css('visibility') === '' && $(".button-me").css('visibility') === '' && $(".button-contact").css('visibility') === '') {
+            $(".title").css('visibility', 'visible');
+            $(".title").show();
+        }
     });
 
     $(".button-me").click(function() {
@@ -32,6 +35,7 @@ $(document).ready(function() {
         $('.background-work').css('opacity', '0');
         $('.background-contact').css('visibility', 'hidden');
         $('.background-contact').css('opacity', '0');
+        $(".title").css('visibility', 'hidden');
     });
 
     $(".button-work").click(function() {
@@ -42,6 +46,7 @@ $(document).ready(function() {
         $('.background-work').css('opacity', '1');
         $('.background-contact').css('visibility', 'hidden');
         $('.background-contact').css('opacity', '0');
+        $(".title").css('visibility', 'hidden');
     });
 
     $(".button-contact").click(function() {
@@ -52,5 +57,6 @@ $(document).ready(function() {
         $('.background-contact').html("<div class='test'> Hello ?? </div>");
         $('.background-contact').css('visibility', 'visible');
         $('.background-contact').css('opacity', '1');
+        $(".title").css('visibility', 'hidden');
     });
 });
