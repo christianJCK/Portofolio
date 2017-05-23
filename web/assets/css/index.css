@@ -27,7 +27,7 @@
     }
 }
 
-.dots {
+.nav {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -37,7 +37,7 @@
 }
 
 @media only screen and (min-device-width: 768px) {
-    .dots {
+    .nav {
         margin-top: 30px;
     }
 }

@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+    $(".button-me").on('click', function () {
+        $(this).data('clicked', true);
+        if($(this).data('clicked')) {
+            $('.background-me').html("<div class='test'> Hello ?? </div>");
+
+        }
+    });
+
+/*
     var navbar='';
 
     $(".button-work, .button-me, .button-contact").hover(function() {
@@ -59,4 +68,5 @@ $(document).ready(function() {
         $('.background-contact').css('opacity', '1');
         $(".title").css('visibility', 'hidden');
     });
+    */
 });
