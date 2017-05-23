@@ -12,27 +12,30 @@
     .body {
         height: calc(100vh - 100px);
     }
+}
 
-.title {
-    font-size: 4em;
+.background-main {
+    font-size: 1.5em;
     font-family: DosisExtraLight, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    color: slateblue;
     order: 2;
 }
 
+.background-main h1 {
+    background-color: lightcoral;
+    color: white;
+}
+
 @media only screen and (min-device-width: 768px) {
-    .title {
-        font-size: 10em;
+    .background-main h1 {
+        font-size: 3em;
     }
 }
 
-
 /* section */
-
 
 .background-me {
     height: 100vh;
@@ -151,4 +154,3 @@
 .content-me {
     visibility: hidden;
 }
-
