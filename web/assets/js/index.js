@@ -8,7 +8,6 @@ $(document).ready(function() {
         });
     });
 
-
     $(".button-work").hover(function () {
         $(".background-work").css({
             'visibility' : 'visible',
@@ -22,6 +21,13 @@ $(document).ready(function() {
             'visibility' : 'visible',
             'opacity'    : '1',
             'font-size'  : '1.5em'
+        });
+    });
+
+    $(".button-me, .button-work, .button-contact").mouseout(function () {
+        $(".background-me, .background-work, .background-contact").css({
+            'visibility' : 'hidden',
+            'opacity'    : '0'
         });
     });
 
