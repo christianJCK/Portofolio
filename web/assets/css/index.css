@@ -38,8 +38,8 @@
 /* section */
 
 .background-me {
-    font-size: 1.5em;
     font-family: DosisExtraLight, sans-serif;
+    background-color: lawngreen;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,102 +48,78 @@
     width: 100vw;
     visibility: hidden;
     position: absolute;
+    transition: .3s ease;
     opacity: 0;
 }
 
 .background-me h1 {
-    background-color: blue;
     color: white;
+    font-size: 1.5em;
 }
 
 @media only screen and (min-device-width: 768px) {
     .background-me h1 {
-        font-size: 3em;
+        font-size: 5em;
     }
     .background-me {
         height: calc(100vh - 100px);
     }
 }
 
-
-
 .background-work {
-    height: 100vh;
-    width: 100vw;
+    font-family: DosisExtraLight, sans-serif;
     background-color: turquoise;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    font-size: 4em;
-    font-family: DosisExtraLight, sans-serif;
-    color: white;
-    transition: .1s ease;
-    z-index: -1;
+    text-align: center;
+    height: calc(100vh - 55px);
+    width: 100vw;
+    visibility: hidden;
+    position: absolute;
+    transition: .3s ease;
+    opacity: 0;
 }
 
-.button-work:hover + .background-work {
-    visibility: visible;
-    opacity: 1;
-    font-size: 4.5em;
-
+.background-work h1 {
+    color: white;
+    font-size: 1.5em;
 }
 
 @media only screen and (min-device-width: 768px) {
-    .background-work {
-        font-size: 14em;
+    .background-work h1 {
+        font-size: 5em;
     }
-
-    .button-work:hover + .background-work {
-        visibility: visible;
-        opacity: 1;
-        font-size: 15em;
+    .background-work {
+        height: calc(100vh - 100px);
     }
 }
 
 .background-contact {
-    height: 100vh;
-    width: 100vw;
+    font-family: DosisExtraLight, sans-serif;
     background-color: slateblue;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    font-size: 4em;
-    font-family: DosisExtraLight, sans-serif;
-    color: white;
-    transition: .1s ease;
-    z-index: -1;
+    text-align: center;
+    height: calc(100vh - 55px);
+    width: 100vw;
+    visibility: hidden;
+    position: absolute;
+    transition: .3s ease;
+    opacity: 0;
 }
 
-.button-contact:hover + .background-contact {
-    visibility: visible;
-    opacity: 1;
-    font-size: 4.5em;
+.background-contact h1 {
+    color: white;
+    font-size: 1.5em;
 }
 
 @media only screen and (min-device-width: 768px) {
+    .background-contact h1 {
+        font-size: 5em;
+    }
     .background-contact {
-        font-size: 14em;
+        height: calc(100vh - 100px);
     }
-
-    .button-contact:hover + .background-contact {
-        visibility: visible;
-        opacity: 1;
-        font-size: 15em;
-    }
-}
-
-.content-me {
-    visibility: hidden;
 }

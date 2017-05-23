@@ -1,9 +1,29 @@
 $(document).ready(function() {
 
     $(".button-me").hover(function () {
-        $(".background-me").css('visibility', 'visible');
-        $(".background-me").css('opacity', '1');
-    })
+        $(".background-me").css({
+            'visibility' : 'visible',
+            'opacity'    : '1',
+            'font-size'  : '1.5em'
+        });
+    });
+
+
+    $(".button-work").hover(function () {
+        $(".background-work").css({
+            'visibility' : 'visible',
+            'opacity'    : '1',
+            'font-size'  : '1.5em'
+        });
+    });
+
+    $(".button-contact").hover(function () {
+        $(".background-contact").css({
+            'visibility' : 'visible',
+            'opacity'    : '1',
+            'font-size'  : '1.5em'
+        });
+    });
 
     /*
     $(".button-me").on('click', function () {
