@@ -30,7 +30,7 @@
 .button-work:hover,
 .button-contact:hover {
     background-size: 150% 150%;
-    color: white;
+    color: black;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -40,9 +40,9 @@
         height: 30px;
         width: 30px;
         margin: 35px;
-        background-image: radial-gradient(circle at center , white 50%, transparent 50%);;
+        background-image: radial-gradient(circle at center , black 50%, transparent 50%);;
         background-repeat: no-repeat;
-        transition: background-size .3s, color .3s;
+        transition: background-size .1s, color .1s;
         background-size: 0 0;
         background-position: 50% 50%;
     }

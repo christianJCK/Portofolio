@@ -38,41 +38,34 @@
 /* section */
 
 .background-me {
-    height: 100vh;
-    width: 100vw;
-    background-color: greenyellow;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
+    font-size: 1.5em;
+    font-family: DosisExtraLight, sans-serif;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    font-size: 4em;
-    font-family: DosisExtraLight, sans-serif;
-    color: white;
-    transition: .1s ease;
-    z-index: -1;
+    text-align: center;
+    height: calc(100vh - 55px);
+    width: 100vw;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
 }
 
-.button-me:hover + .background-me {
-    visibility: visible;
-    opacity: 1;
-    font-size: 4.5em;
+.background-me h1 {
+    background-color: blue;
+    color: white;
 }
 
 @media only screen and (min-device-width: 768px) {
-    .background-me {
-        font-size: 14em;
+    .background-me h1 {
+        font-size: 3em;
     }
-    .button-me:hover + .background-me {
-        visibility: visible;
-        opacity: 1;
-        font-size: 15em;
+    .background-me {
+        height: calc(100vh - 100px);
     }
 }
+
+
 
 .background-work {
     height: 100vh;

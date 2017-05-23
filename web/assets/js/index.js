@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    $(".button-me").hover(function () {
+        $(".background-me").css('visibility', 'visible');
+        $(".background-me").css('opacity', '1');
+    })
+
+    /*
     $(".button-me").on('click', function () {
         $(this).data('clicked', true);
         if($(this).data('clicked')) {
@@ -8,7 +14,7 @@ $(document).ready(function() {
         }
     });
 
-/*
+
     var navbar='';
 
     $(".button-work, .button-me, .button-contact").hover(function() {
