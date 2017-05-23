@@ -1,6 +1,21 @@
 {% extends ('base.html.twig') %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/nav.css') }}">
+{% endblock %}
+
 {% block body %}
+
+    <section class="header">
+        <div class="nav">
+            <div class="button-me">
+            </div>
+            <div class="button-work">
+            </div>
+            <div class="button-contact">
+            </div>
+        </div>
+    </section>
 
     {% block content %}
     {% endblock %}

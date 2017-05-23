@@ -1,0 +1,49 @@
+.header {
+    background-color: white;
+    width: 100vw;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    order: 1;
+}
+
+.button-me,
+.button-work,
+.button-contact {
+    height: 25px;
+    width: 25px;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.button-me:hover,
+.button-work:hover,
+.button-contact:hover {
+    background-size: 150% 150%;
+    color: white;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .button-me,
+    .button-work,
+    .button-contact {
+        height: 30px;
+        width: 30px;
+        margin: 35px;
+        background-image: radial-gradient(circle at center , white 50%, transparent 50%);;
+        background-repeat: no-repeat;
+        transition: background-size .3s, color .3s;
+        background-size: 0 0;
+        background-position: 50% 50%;
+    }
+}

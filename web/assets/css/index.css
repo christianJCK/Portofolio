@@ -1,14 +1,17 @@
-.header {
-    background-color: antiquewhite;
-    height: 100vh;
+.body {
+    background-color: lightblue;
+    height: calc(100vh - 55px);
     width: 100vw;
-    position: absolute;
     z-index: 0;
     display: flex;
     flex-direction: column;
+    top: 0;
 }
 
-
+@media only screen and (min-device-width: 768px) {
+    .body {
+        height: calc(100vh - 100px);
+    }
 
 .title {
     font-size: 4em;
@@ -27,57 +30,9 @@
     }
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 15px;
-    order: 1;
-}
-
-@media only screen and (min-device-width: 768px) {
-    .nav {
-        margin-top: 30px;
-    }
-}
 
 /* section */
 
-
-.button-me,
-.button-work,
-.button-contact {
-    height: 25px;
-    width: 25px;
-    border: 2px solid white;
-    border-radius: 15px;
-    cursor: pointer;
-    margin: 15px;
-}
-
-.button-me:hover,
-.button-work:hover,
-.button-contact:hover {
-    background-size: 150% 150%;
-    color: white;
-}
-
-@media only screen and (min-device-width: 768px) {
-    .button-me,
-    .button-work,
-    .button-contact {
-        height: 30px;
-        width: 30px;
-        margin: 35px;
-        border: 3px solid white;
-        background-image: radial-gradient(circle at center , white 50%, transparent 50%);;
-        background-repeat: no-repeat;
-        transition: background-size .3s, color .3s;
-        background-size: 0 0;
-        background-position: 50% 50%;
-    }
-}
 
 .background-me {
     height: 100vh;
