@@ -32,8 +32,14 @@ $(document).ready(function() {
         $(".background-main").fadeIn();
     });
 
-    $(".button-me").click(function() {
-        $( ".background-me" ).slideUp( "slow" );
+    $(".button-me, .button-work, .button-contact").click(function() {
+        $(".background-me, .background-work, .background-contact").slideUp( "fast" );
+    });
+
+    $(".button-me, .button-work, .button-contact").hover(function() {
+        if ( $(".background-me, .background-work, .background-contact").is( ":hidden" ) ) {
+            $(".background-me, .background-work, .background-contact").show();
+        }
     });
 
     /*
