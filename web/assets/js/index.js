@@ -33,7 +33,7 @@ $(document).ready(function() {
     });
 
     $(".button-me, .button-work, .button-contact").click(function() {
-        $(".background-me, .background-work, .background-contact").slideUp( "fast" );
+        $(".background-me, .background-work, .background-contact").slideUp( "normal" );
     });
 
     $(".button-me, .button-work, .button-contact").hover(function() {
