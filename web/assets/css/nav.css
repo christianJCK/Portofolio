@@ -1,0 +1,49 @@
+.footer {
+    background-color: white;
+    width: 100vw;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-me,
+.button-work,
+.button-contact {
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 15px;
+    background-image: radial-gradient(circle at center , darkgrey 50%, transparent 50%);;
+    background-repeat: no-repeat;
+    transition: background-size .1s, color .1s;
+    background-size: 10px 10px;
+    background-position: 50% 50%;
+}
+
+.button-me:hover,
+.button-work:hover,
+.button-contact:hover {
+    background-size: 150% 150%;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .button-me,
+    .button-work,
+    .button-contact {
+        height: 30px;
+        width: 30px;
+        margin: 35px;
+        background-image: radial-gradient(circle at center , darkgrey 50%, transparent 50%);;
+        background-repeat: no-repeat;
+        transition: background-size .1s, color .1s;
+        background-size: 10px 10px;
+        background-position: 50% 50%;
+    }
+}

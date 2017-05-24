@@ -1,44 +1,25 @@
 {% extends ('app/layout.html.twig') %}
 
 {% block stylesheets %}
+    {{ parent() }}
     <link rel="stylesheet" href="{{ asset('assets/css/index.css') }}">
 {% endblock %}
 
     {% block content %}
 
         <section class="body">
-            <h1 class="title">BIENVENUE</h1>
-            <div class="dots">
-                <div class="about-me">
-                    <div class="button-me">
-                        <div class="content">
-
-                        </div>
-                    </div>
-                    <div class="background-me">BONJOUR !</div>
-                </div>
-                <div class="work">
-                    <div class="button-work">
-                        <div class="content">
-
-                        </div>
-                    </div>
-                    <div class="background-work">MES TRUCS</div>
-                </div>
-                <div class="contact">
-                    <div class="button-contact">
-                        <div class="content">
-
-                        </div>
-                    </div>
-                    <div class="background-contact">ALLÔ ?</div>
-                </div>
+            <div class="background-main">
+                <h1>BIENVENUE</h1>
+            </div>
+            <div class="background-me">
+                <h1>BONJOUR !</h1>
+            </div>
+            <div class="background-work">
+                <h1>MES TRUCS ...</h1>
+            </div>
+            <div class="background-contact">
+                <h1>ALLÔ ?</h1>
             </div>
         </section>
 
-
     {% endblock %}
-
-{% block javascripts %}
-    <script src="{{ asset('assets/js/index.js') }}"></script>
-{% endblock %}
