@@ -3,25 +3,25 @@ $(document).ready(function() {
     $(".button-me").hover(function () {
         $(".background-me").css({
             'visibility' : 'visible',
-            'opacity'    : '1',
-            'font-size'  : '1.5em'
+            'opacity'    : '1'
         });
+        $(".background-main").hide();
     });
 
     $(".button-work").hover(function () {
         $(".background-work").css({
             'visibility' : 'visible',
-            'opacity'    : '1',
-            'font-size'  : '1.5em'
+            'opacity'    : '1'
         });
+        $(".background-main").hide();
     });
 
     $(".button-contact").hover(function () {
         $(".background-contact").css({
             'visibility' : 'visible',
-            'opacity'    : '1',
-            'font-size'  : '1.5em'
+            'opacity'    : '1'
         });
+        $(".background-main").hide();
     });
 
     $(".button-me, .button-work, .button-contact").mouseout(function () {
@@ -29,6 +29,7 @@ $(document).ready(function() {
             'visibility' : 'hidden',
             'opacity'    : '0'
         });
+        $(".background-main").fadeIn();
     });
 
     /*
