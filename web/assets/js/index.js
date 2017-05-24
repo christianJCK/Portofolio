@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    
     $(".button-me").hover(function () {
         $(".background-me").css({
             'visibility' : 'visible',
@@ -30,6 +30,10 @@ $(document).ready(function() {
             'opacity'    : '0'
         });
         $(".background-main").fadeIn();
+    });
+
+    $(".button-me").click(function() {
+        $( ".background-me" ).slideUp( "slow" );
     });
 
     /*
