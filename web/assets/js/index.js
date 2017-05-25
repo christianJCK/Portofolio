@@ -1,26 +1,27 @@
 $(document).ready(function() {
-    var contactPageDisplayed = false;
+
+
     var buttonClicked = '';
 
     $(".button").hover(function () {
         var buttonType = $(this).attr('data-button-type');
         if(buttonType != buttonClicked){
-            showElement(".background-"+buttonType);
+            showElement(".background-" + buttonType);
             $(".background-main").hide();
         }
     });
 
     $(".button").mouseout(function () {
-        if(!contactPageDisplayed){
+        if(buttonClicked == ''){
             $(".background-main").fadeIn();
         }
         hideElement(".background-me, .background-work, .background-contact");
     });
 
     $(".button").click(function() {
-        contactPageDisplayed = true;
-        buttonClicked=$(this).attr('data-button-type');
-        showElement(".background-contact-page");
+        buttonClicked = $(this).attr('data-button-type');
+        hideElement(".pageContent");
+        showElement(".page-" + buttonClicked);
         $(".background-me, .background-work, .background-contact").slideUp( "normal" );
     });
 
@@ -33,4 +34,5 @@ $(document).ready(function() {
         $(selectorString).css({'visibility' : 'hidden','opacity' : '0'});
         $(selectorString).hide();
     }
+
 });
