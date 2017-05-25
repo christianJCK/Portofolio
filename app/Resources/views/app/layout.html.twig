@@ -6,10 +6,7 @@
 
 {% block body %}
 
-    {% block content %}
-    {% endblock %}
-
-    <section class="footer">
+    <section class="header">
         <div class="nav">
             <div class="button button-me" data-button-type="me">
             </div>
@@ -19,6 +16,10 @@
             </div>
         </div>
     </section>
+
+    {% block content %}
+    {% endblock %}
+
 
 {% endblock %}
 

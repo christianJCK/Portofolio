@@ -26,7 +26,7 @@ $(document).ready(function() {
     });
 
     function showElement(selectorString){
-        $(selectorString).css({'visibility' : 'visible','opacity' : '1'});
+        $(selectorString).css({'display' : 'flex' , 'visibility' : 'visible' , 'opacity' : '1'});
         $(selectorString).show();
     }
 
