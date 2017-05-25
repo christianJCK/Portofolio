@@ -2,7 +2,6 @@
     background-color: lightblue;
     height: calc(100vh - 55px);
     width: 100vw;
-    z-index: 0;
     display: flex;
     flex-direction: column;
 }
@@ -20,6 +19,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    background-color: lightblue;
 }
 
 .background-main h1 {
@@ -48,6 +48,7 @@
     position: absolute;
     /* transition: .3s ease; */
     opacity: 0;
+    z-index: 1;
 }
 
 .background-me h1 {
@@ -76,6 +77,7 @@
     visibility: hidden;
     position: absolute;
     opacity: 0;
+    z-index: 1;
 }
 
 .background-work h1 {
@@ -104,6 +106,7 @@
     visibility: hidden;
     position: absolute;
     opacity: 0;
+    z-index: 1;
 }
 
 .background-contact h1 {
@@ -116,6 +119,25 @@
         font-size: 5em;
     }
     .background-contact {
+        height: calc(100vh - 100px);
+    }
+}
+
+.background-contact-page {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: calc(100vh - 55px);
+    width: 100vw;
+    background-color: yellow;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .background-contact-page {
         height: calc(100vh - 100px);
     }
 }
