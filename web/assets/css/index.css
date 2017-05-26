@@ -141,11 +141,12 @@
     font-family: DosisBold, sans-serif;
     color: lawngreen;
     text-align: center;
+    font-size: 1.5em
 }
 
 .page-me p {
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .page-me-block {
@@ -175,6 +176,12 @@
     .page-me h2 {
         text-align: left;
         padding-left: 10px;
+        font-size: 2em;
+    }
+
+    .page-me p {
+        text-align: justify;
+        font-size: 1.2em;
     }
 
     .page-me-block {
