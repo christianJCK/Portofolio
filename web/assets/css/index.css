@@ -12,6 +12,8 @@
     }
 }
 
+/* main background */
+
 .background-main {
     font-size: 1.5em;
     font-family: DosisExtraLight, sans-serif;
@@ -47,7 +49,7 @@
     visibility: hidden;
     position: absolute;
     opacity: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .background-me h1 {
@@ -76,7 +78,7 @@
     visibility: hidden;
     position: absolute;
     opacity: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .background-work h1 {
@@ -105,7 +107,7 @@
     visibility: hidden;
     position: absolute;
     opacity: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .background-contact h1 {
@@ -122,6 +124,8 @@
     }
 }
 
+/* page-me */
+
 .page-me {
     visibility: hidden;
     opacity: 0;
@@ -131,26 +135,62 @@
     height: calc(100vh - 55px);
     width: 100vw;
     background-color: white;
-    padding: 30px;
 }
 
 .page-me h2 {
     font-family: DosisBold, sans-serif;
-    text-align: center;
     color: lawngreen;
+    text-align: center;
 }
 
 .page-me p {
-    font-family: DosisMedium, sans-serif;
     text-align: justify;
     font-size: 1.2em;
+}
+
+.page-me-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-me-block--first {
+    display: flex;
+    flex: 1;
+}
+
+.page-me-block--second {
+    display: flex;
+    flex: 1;
 }
 
 @media only screen and (min-device-width: 768px) {
     .page-me {
         height: calc(100vh - 100px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .page-me h2 {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .page-me-block {
+        flex-direction: row;
+    }
+
+    .page-me-block--first {
+        padding: 10px;
+    }
+
+    .page-me-block--second {
+        padding: 10px;
     }
 }
+
+/* page-work */
 
 .page-work {
     visibility: hidden;
@@ -168,6 +208,8 @@
         height: calc(100vh - 100px);
     }
 }
+
+/* page-contact */
 
 .page-contact {
     visibility: hidden;

@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
     var buttonClicked = '';
 
     $(".button").hover(function () {
@@ -34,5 +33,15 @@ $(document).ready(function() {
         $(selectorString).css({'visibility' : 'hidden','opacity' : '0'});
         $(selectorString).hide();
     }
+
+    $(".button-me").click(function() {
+        $(".nav").css({'box-shadow' : '0px 2px lawngreen'});
+    });
+    $(".button-work").click(function() {
+        $(".nav").css({'box-shadow' : '0px 2px turquoise'});
+    });
+    $(".button-contact").click(function() {
+        $(".nav").css({'box-shadow' : '0px 2px slateblue'});
+    });
 
 });
