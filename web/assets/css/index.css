@@ -141,7 +141,7 @@
     font-family: DosisMedium, sans-serif;
     color: lawngreen;
     text-align: center;
-    font-size: 1.5em
+    font-size: 1.7em
 }
 
 .page-me p {
@@ -176,7 +176,11 @@
     .page-me h2 {
         text-align: left;
         padding-left: 10px;
-        font-size: 2em;
+        font-size: 3em;
+        font-family: DosisExtraLight, sans-serif;
+        background-color: lawngreen;
+        color: white;
+        width: 50%;
     }
 
     .page-me p {
@@ -214,7 +218,7 @@
     font-family: DosisMedium, sans-serif;
     color: turquoise;
     text-align: center;
-    font-size: 1.5em
+    font-size: 1.7em
 }
 
 .page-work-projects {
@@ -225,6 +229,7 @@
 .page-work-projects--block {
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex: 1;
     margin: 10px;
 }
@@ -233,23 +238,28 @@
     text-align: center;
     color: turquoise;
     font-family: DosisLight, sans-serif;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+    width: 60%;
+}
+
+.page-work-projects--block a {
+    text-decoration: none;
+    color: turquoise;
+    width: 100%;
+    text-align: center;
+}
+
+.page-work-projects--block a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: turquoise;
 }
 
 .img-project {
-    width: 100%
-}
-
-.link {
-    display: flex;
-    flex-direction: row;
-}
-
-.code {
-    float: left;
-}
-
-.web {
-    float: right;
+    width: 100%;
+    height: 50%;
+    box-shadow: 0 0 1px darkgrey;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -261,9 +271,21 @@
         flex-direction: column;
     }
 
+    .page-work .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .page-work h2 {
         padding-left: 10px;
-        font-size: 2em;
+        font-size: 3em;
+        font-family: DosisExtraLight, sans-serif;
+        margin: 5% 0 10% 0;
+        background-color: turquoise;
+        color: white;
+        width: 40%
     }
 
     .page-work-projects {
@@ -272,6 +294,14 @@
 
     .page-work-projects--block {
         margin: 15px;
+    }
+
+    .page-work-projects--block h3 {
+        font-size: 2em;
+    }
+
+    .page-work-projects--block p {
+        font-size: 1.2em;
     }
 }
 
