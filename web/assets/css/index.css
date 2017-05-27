@@ -175,7 +175,6 @@
 
     .page-me h2 {
         text-align: left;
-        padding-left: 10px;
         font-size: 3em;
         font-family: DosisExtraLight, sans-serif;
         background-color: lawngreen;
@@ -193,11 +192,11 @@
     }
 
     .page-me-block--first {
-        padding: 10px;
+        padding: 10px 0 10px 0;
     }
 
     .page-me-block--second {
-        padding: 10px;
+        padding: 10px 0 10px 0;
     }
 }
 
@@ -282,10 +281,10 @@
         padding-left: 10px;
         font-size: 3em;
         font-family: DosisExtraLight, sans-serif;
-        margin: 5% 0 10% 0;
+        margin: 8% 0 8% 0;
         background-color: turquoise;
         color: white;
-        width: 40%
+        width: 42%
     }
 
     .page-work-projects {
