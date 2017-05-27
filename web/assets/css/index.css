@@ -138,7 +138,7 @@
 }
 
 .page-me h2 {
-    font-family: DosisBold, sans-serif;
+    font-family: DosisMedium, sans-serif;
     color: lawngreen;
     text-align: center;
     font-size: 1.5em
@@ -210,9 +210,68 @@
     background-color: white;
 }
 
+.page-work h2 {
+    font-family: DosisMedium, sans-serif;
+    color: turquoise;
+    text-align: center;
+    font-size: 1.5em
+}
+
+.page-work-projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-work-projects--block {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px;
+}
+
+.page-work-projects--block h3 {
+    text-align: center;
+    color: turquoise;
+    font-family: DosisLight, sans-serif;
+}
+
+.img-project {
+    width: 100%
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+}
+
+.code {
+    float: left;
+}
+
+.web {
+    float: right;
+}
+
 @media only screen and (min-device-width: 768px) {
     .page-work {
         height: calc(100vh - 100px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .page-work h2 {
+        padding-left: 10px;
+        font-size: 2em;
+    }
+
+    .page-work-projects {
+        flex-direction: row;
+    }
+
+    .page-work-projects--block {
+        margin: 15px;
     }
 }
 
