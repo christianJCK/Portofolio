@@ -13,9 +13,5 @@ class MainController extends Controller
         return $this->render('app/main/index.html.twig');
     }
 
-    public function ajaxAction()
-    {
-
-    }
 
 }
