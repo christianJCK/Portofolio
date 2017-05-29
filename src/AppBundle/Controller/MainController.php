@@ -26,9 +26,9 @@ class MainController extends Controller
             $em->flush();
 
             $message = \Swift_Message::newInstance();
-            $message->setFrom($this->getParameter('mailer_user'))
+            $message->setFrom($data->getMail())
                 ->setTo('goteki85@gmail.com')
-                ->setBody('text/html');
+                ->setBody($data->getMessage() . $data->getMail());
 
             $this->get('mailer')->send($message);
         }
