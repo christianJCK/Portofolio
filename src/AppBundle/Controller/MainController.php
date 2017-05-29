@@ -13,16 +13,28 @@ class MainController extends Controller
 {
     public function indexAction(Request $request)
     {
-
         $contact = new Contact();
-        $form = $this->createForm(ContactType::class, $contact);
+        $formContact = $this->createForm(ContactType::class, $contact);
+        $formContact->handleRequest($request);
+        $data = $formContact->getData();
 
-        $form->handleRequest($request);
+
+        if ($formContact->isSubmitted() && $formContact->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+
+            $em->persist($contact);
+            $em->flush();
+
+            $message = \Swift_Message::newInstance();
+            $message->setFrom($this->getParameter('mailer_user'))
+                ->setTo('goteki85@gmail.com')
+                ->setBody('text/html');
+
+            $this->get('mailer')->send($message);
+        }
 
         return $this->render('app/main/index.html.twig', array(
-            'form' => $form->createView()
+            'form' => $formContact->createView()
         ));
     }
-
-
 }
