@@ -84,11 +84,19 @@
             </div>
             <div class="pageContent page-contact" data-background-type="contact">
                 <div class="container">
-                    <h2>Oui je vous écoute !</h2>
-                    <p>Envie d'en savoir plus?<br>
-                       D'échanger ?<br>
-                       Ou tout simplement de savoir quel restau vaut le coup dans le coin ?
-                    </p>
+                    <h2>OUI JE VOUS ÉCOUTE !</h2>
+                    <div class="page-contact-block">
+                        <div class="page-contact-block--first">
+                            <p>Envie d'en savoir plus? D'échanger? Ou tout simplement de savoir quel restau vaut le coup dans le coin ?
+                            </p>
+                        </div>
+                        <div class="page-contact-block--second">
+                            {{ form_start(form) }}
+                                {{ form_widget(form) }}
+                                <input type="submit" class="submit-btn" value="Merci !">
+                            {{ form_end(form) }}
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
