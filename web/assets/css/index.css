@@ -158,11 +158,34 @@
 .page-me-block--first {
     display: flex;
     flex: 1;
+    width: 100%
 }
 
 .page-me-block--second {
     display: flex;
     flex: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.page-me-block--second ul {
+    list-style-type: none;
+}
+
+.page-me-block--second a {
+    font-family: DosisLight, sans-serif;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: lawngreen;
+}
+
+.page-me-block--second h3:hover {
+    text-decoration: none;
+    color: white;
+    background-color: lawngreen;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -205,6 +228,11 @@
 
     .page-me-block--second {
         padding: 10px 0 10px 0;
+    }
+
+    .page-me-block--second h3 {
+        font-family: DosisLight, sans-serif;
+        font-size: 2em;
     }
 }
 
@@ -394,6 +422,11 @@ textarea:focus {
     font-size: 1.2em;
 }
 
+.submit-btn:focus {
+    border: 0;
+    color: purple;
+}
+
 @media only screen and (min-device-width: 768px) {
     .page-contact {
         height: calc(100vh - 100px);
@@ -417,5 +450,9 @@ textarea:focus {
 
     textarea {
         height: 250px;
+    }
+
+    .submit-btn {
+        font-size: 1.6em;
     }
 }
