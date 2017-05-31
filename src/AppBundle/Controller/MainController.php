@@ -28,9 +28,12 @@ class MainController extends Controller
             $message = \Swift_Message::newInstance();
             $message->setFrom($data->getMail())
                 ->setTo('goteki85@gmail.com')
-                ->setBody($data->getMessage() . $data->getMail());
+                ->setBody($data->getMail() . ' ' . $data->getMessage());
 
             $this->get('mailer')->send($message);
+
+            $this->addFlash('message', 'Message bien envoyé !');
+            return $this->redirectToRoute('app_homepage');
         }
 
         return $this->render('app/main/index.html.twig', array(

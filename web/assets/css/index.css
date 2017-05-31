@@ -12,6 +12,16 @@
     }
 }
 
+.flash-notice {
+    z-index: 200;
+    color: red;
+    background-color: #0000F0;
+    font-size: 6em;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+}
+
+
 /* main background */
 
 .background-main {
@@ -173,6 +183,7 @@
 
 .page-me-block--second ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .page-me-block--second a {

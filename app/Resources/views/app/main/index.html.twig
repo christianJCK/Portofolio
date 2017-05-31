@@ -8,6 +8,11 @@
     {% block content %}
 
         <section class="body">
+            {% for message in app.session.flashBag('message') %}
+                <div class="flash-notice">
+                    {{ message }}
+                </div>
+            {% endfor %}
             <div class="background-main">
                 <h1>BIENVENUE</h1>
             </div>
