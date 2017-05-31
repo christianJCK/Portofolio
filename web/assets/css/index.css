@@ -422,6 +422,11 @@ textarea:focus {
     font-size: 1.2em;
 }
 
+.submit-btn:hover {
+    background-color: slateblue;
+    color: white;
+}
+
 .submit-btn:focus {
     border: 0;
     color: purple;
@@ -453,6 +458,6 @@ textarea:focus {
     }
 
     .submit-btn {
-        font-size: 1.6em;
+        font-size: 2em;
     }
 }
