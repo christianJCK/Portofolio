@@ -8,13 +8,13 @@
     {% block content %}
 
         <section class="body">
-            {% for message in app.session.flashBag('message') %}
-                <div class="flash-notice">
-                    {{ message }}
-                </div>
-            {% endfor %}
             <div class="background-main">
                 <h1>BIENVENUE</h1>
+                {% for message in app.session.flashBag.get('notice') %}
+                    <div class="flash-notice">
+                        <p>{{ message|raw }}</p>
+                    </div>
+                {% endfor %}
             </div>
             <div class="background-me">
                 <h1>BONJOUR !</h1>

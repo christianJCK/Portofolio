@@ -13,12 +13,29 @@
 }
 
 .flash-notice {
-    z-index: 200;
-    color: red;
-    background-color: #0000F0;
-    font-size: 6em;
-    width: 100%;
-    font-family: Helvetica, sans-serif;
+    z-index: 1;
+    background-color: aquamarine;
+    height: calc(100vh - 55px);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flash-notice p {
+    color: white;
+    font-size: 1.3em;
+    font-family: DosisMedium, sans-serif;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .flash-notice {
+        height: calc(100vh - 100px);
+    }
+    .flash-notice p {
+        font-size: 1.7em;
+    }
 }
 
 
@@ -37,6 +54,7 @@
 .background-main h1 {
     background-color: lightcoral;
     color: white;
+    position: absolute;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -295,6 +313,7 @@
     color: turquoise;
     width: 100%;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .page-work-projects--block a:hover {
@@ -440,7 +459,6 @@ textarea:focus {
 
 .submit-btn:focus {
     border: 0;
-    color: purple;
 }
 
 @media only screen and (min-device-width: 768px) {
