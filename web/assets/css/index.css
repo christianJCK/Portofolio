@@ -14,27 +14,23 @@
 
 .flash-notice {
     z-index: 1;
-    background-color: aquamarine;
-    height: calc(100vh - 55px);
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 70%;
 }
 
 .flash-notice p {
-    color: white;
-    font-size: 1.3em;
-    font-family: DosisMedium, sans-serif;
+    color: black;
+    font-size: 0.9em;
+    font-family: DosisLight, sans-serif;
+    background-color: white;
 }
 
 @media only screen and (min-device-width: 768px) {
-    .flash-notice {
-        height: calc(100vh - 100px);
-    }
     .flash-notice p {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
 }
 
@@ -55,6 +51,7 @@
     background-color: lightcoral;
     color: white;
     position: absolute;
+    margin: 0;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -81,8 +78,9 @@
 }
 
 .background-me h1 {
-    color: white;
+    color: lawngreen;
     font-size: 1.5em;
+    background-color: white;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -110,8 +108,10 @@
 }
 
 .background-work h1 {
-    color: white;
+    color: turquoise;
     font-size: 1.5em;
+    background-color: white;
+
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -139,8 +139,9 @@
 }
 
 .background-contact h1 {
-    color: white;
+    color: slateblue;
     font-size: 1.5em;
+    background-color: white;
 }
 
 @media only screen and (min-device-width: 768px) {
