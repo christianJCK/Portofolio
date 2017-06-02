@@ -15,6 +15,81 @@
 .button-me,
 .button-work,
 .button-contact {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    margin: 25px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-color: lightgrey;
+
+}
+
+.button-me:hover {
+    transform: scale(2.7);
+    background-color: lawngreen;
+}
+
+.button-work:hover {
+    transform: scale(2.7);
+    background-color: turquoise;
+}
+
+.button-contact:hover {
+    transform: scale(2.7);
+    background-color: slateblue;
+}
+
+
+@media only screen and (min-device-width: 768px) {
+    .button-me,
+    .button-work,
+    .button-contact {
+        height: 12px;
+        width: 12px;
+        border-radius: 50px;
+        margin: 44px;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+        background-color: lightgrey;
+    }
+
+    .button-me:hover {
+        transform: scale(2.5);
+        background-color: lawngreen;
+    }
+
+    .button-work:hover {
+        transform: scale(2.5);
+        background-color: turquoise;
+    }
+
+
+    .button-contact:hover {
+        transform: scale(2.5);
+        background-color: slateblue;
+    }
+}
+
+/*
+
+.header {
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 1;
+}
+
+.button-me,
+.button-work,
+.button-contact {
     height: 25px;
     width: 25px;
     border-radius: 15px;
@@ -47,3 +122,4 @@
         background-position: 50% 50%;
     }
 }
+*/

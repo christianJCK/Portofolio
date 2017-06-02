@@ -30,7 +30,7 @@ class MainController extends Controller
                 ->setTo('goteki85@gmail.com')
                 ->setBody($data->getMail() . ' ' . $data->getMessage());
 
-            $this->get('mailer')->send($message);
+            //$this->get('mailer')->send($message);
 
             $this->addFlash('notice', "<strong>MESSAGE ENVOYÉ !</strong><br> J'essaierais d'y répondre le plus rapidement possible.<br>
              En attendant vous pouvez consulter cette délicieuse <a href='http://www.marmiton.org/recettes/recette_pancakes-a-la-banane_45575.aspx' target='_blank'>recette</a> de pancake. À bientôt !");
