@@ -10,6 +10,11 @@
         <section class="body">
             <div class="background-main">
                 <h1>BIENVENUE</h1>
+                {% for message in app.session.flashBag.get('notice') %}
+                    <div class="flash-notice">
+                        <p>{{ message|raw }}</p>
+                    </div>
+                {% endfor %}
             </div>
             <div class="background-me">
                 <h1>BONJOUR !</h1>
@@ -39,7 +44,13 @@
                             </p>
                         </div>
                         <div class="page-me-block--second">
-
+                            <ul>
+                                <li><a href="https://github.com/christianJCK" target="_blank"><h3>&lt/MON_CODE&gt</h3></a></li>
+                                <li><a href="https://www.linkedin.com/in/christianjecko/" target="_blank"><h3>&lt/MON_CV_EN_LIGNE&gt</h3></a></li>
+                                <li><a href="{{  asset('assets/pdf/cv.pdf') }}" target="_blank"><h3>&lt/MON_CV_TOUT_COURT&gt</h3></a></li>
+                                <li><a href="https://twitter.com/sushi4000" target="_blank"><h3>&lt/MES_TWEETS&gt</h3></a></li>
+                                <li><a href="http://punknower.deviantart.com/" target="_blank"><h3>&lt/MES_DESSINS&gt</h3></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -56,7 +67,6 @@
                                 Pour le compte d'une franchise de restaurants, nous devions créer un site en HTML5 et CSS3 relayant les restaurants ratatouille.
                             </p>
                             <a href="https://github.com/christianJCK/WCS_Project1/tree/feature" target="_blank" class="code">code source</a>
-                            <a href="#" class="web">site web</a>
                         </div>
                         <div class="page-work-projects--block">
                             <img src="{{ asset('assets/img/projet2.png') }}" class="img-project"  alt="first project image">
@@ -66,7 +76,6 @@
                                 RDM-éditions est un éditeur de livre basé à Lyon ayant une couverture régionale. Le cahier des charges comprenais la refonte global du site ainsi qu'un back-office pour la gestion du contenu.
                             </p>
                             <a href="https://github.com/christianJCK/WCS_Project2/tree/master" target="_blank" class="code">code source</a>
-                            <a href="#" class="web">site web</a>
                         </div>
                         <div class="page-work-projects--block">
                             <img src="{{ asset('assets/img/projet3.png') }}" class="img-project"  alt="first project image">

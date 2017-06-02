@@ -12,6 +12,29 @@
     }
 }
 
+.flash-notice {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+}
+
+.flash-notice p {
+    color: black;
+    font-size: 0.9em;
+    font-family: DosisLight, sans-serif;
+    background-color: white;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .flash-notice p {
+        font-size: 1.5em;
+    }
+}
+
+
 /* main background */
 
 .background-main {
@@ -27,6 +50,8 @@
 .background-main h1 {
     background-color: lightcoral;
     color: white;
+    position: absolute;
+    margin: 0;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -53,8 +78,9 @@
 }
 
 .background-me h1 {
-    color: white;
+    color: lawngreen;
     font-size: 1.5em;
+    background-color: white;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -82,8 +108,10 @@
 }
 
 .background-work h1 {
-    color: white;
+    color: turquoise;
     font-size: 1.5em;
+    background-color: white;
+
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -111,8 +139,9 @@
 }
 
 .background-contact h1 {
-    color: white;
+    color: slateblue;
     font-size: 1.5em;
+    background-color: white;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -142,7 +171,7 @@
     color: lawngreen;
     text-align: center;
     font-size: 1.7em;
-    margin: 45px 0 45px 0;
+    margin: 32px 0 32px 0;
 }
 
 .page-me p {
@@ -158,11 +187,35 @@
 .page-me-block--first {
     display: flex;
     flex: 1;
+    width: 100%
 }
 
 .page-me-block--second {
     display: flex;
     flex: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.page-me-block--second ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.page-me-block--second a {
+    font-family: DosisLight, sans-serif;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: lawngreen;
+}
+
+.page-me-block--second h3:hover {
+    text-decoration: none;
+    color: white;
+    background-color: lawngreen;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -206,6 +259,11 @@
     .page-me-block--second {
         padding: 10px 0 10px 0;
     }
+
+    .page-me-block--second h3 {
+        font-family: DosisLight, sans-serif;
+        font-size: 2em;
+    }
 }
 
 /* page-work */
@@ -226,7 +284,7 @@
     color: turquoise;
     text-align: center;
     font-size: 1.7em;
-    margin: 45px 0 45px 0;
+    margin: 32px 0 32px 0;
 }
 
 .page-work-projects {
@@ -256,6 +314,7 @@
     color: turquoise;
     width: 100%;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .page-work-projects--block a:hover {
@@ -335,7 +394,7 @@
     color: slateblue;
     text-align: center;
     font-size: 1.7em;
-    margin: 45px 0 45px 0;
+    margin: 32px 0 32px 0;
 }
 
 .page-contact-block {
@@ -350,10 +409,20 @@
 
 .page-contact-block--second {
     width: 100%;
+    color: slateblue;
 }
 
 input {
     width: 100%;
+    border: none;
+    border-bottom: 1px solid slateblue;
+}
+
+input:focus {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid purple;
 }
 
 label {
@@ -365,11 +434,32 @@ textarea {
     resize: none;
     width: 100%;
     height: 30vh;
+    border: 1px solid slateblue;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid purple;
 }
 
 .submit-btn {
     width: 100%;
     margin: 15px 0 15px 0;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    background-color: inherit;
+    font-size: 1.2em;
+}
+
+.submit-btn:hover {
+    background-color: slateblue;
+    color: white;
+}
+
+.submit-btn:focus {
+    border: 0;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -397,9 +487,7 @@ textarea {
         height: 250px;
     }
 
-    .page-contact-block--first {
-    }
-
-    .page-contact-block--second {
+    .submit-btn {
+        font-size: 2em;
     }
 }
