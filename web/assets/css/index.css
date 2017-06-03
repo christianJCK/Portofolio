@@ -1,5 +1,4 @@
 .body {
-    background-color: lightblue;
     height: calc(100vh - 55px);
     width: 100vw;
     display: flex;
@@ -39,24 +38,37 @@
 
 .background-main {
     font-size: 1.5em;
-    font-family: DosisExtraLight, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-color: lightblue;
 }
 
 .background-main h1 {
-    background-color: lightcoral;
     color: white;
     position: absolute;
+    font-family: DosisLight, sans-serif;
     margin: 0;
+    text-shadow: 10px 10px 0 slateblue, -10px -10px turquoise;
+    -webkit-animation:colorchange 10s infinite ease-in-out;
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        text-shadow: 10px 10px 0 slateblue, -10px -10px turquoise;
+    }
+    50% {
+        text-shadow: -10px -10px 0 turquoise, 10px 10px slateblue;
+        color: black;
+    }
+    100% {
+        text-shadow: 10px 10px 0 slateblue, -10px -10px turquoise;
+    }
 }
 
 @media only screen and (min-device-width: 768px) {
     .background-main h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
 }
 
@@ -78,14 +90,13 @@
 }
 
 .background-me h1 {
-    color: lawngreen;
+    color: white;
     font-size: 1.5em;
-    background-color: white;
 }
 
 @media only screen and (min-device-width: 768px) {
     .background-me h1 {
-        font-size: 5em;
+        font-size: 6em;
     }
     .background-me {
         height: calc(100vh - 100px);
@@ -108,15 +119,13 @@
 }
 
 .background-work h1 {
-    color: turquoise;
+    color: white;
     font-size: 1.5em;
-    background-color: white;
-
 }
 
 @media only screen and (min-device-width: 768px) {
     .background-work h1 {
-        font-size: 5em;
+        font-size: 6em;
     }
     .background-work {
         height: calc(100vh - 100px);
@@ -139,14 +148,13 @@
 }
 
 .background-contact h1 {
-    color: slateblue;
+    color: white;
     font-size: 1.5em;
-    background-color: white;
 }
 
 @media only screen and (min-device-width: 768px) {
     .background-contact h1 {
-        font-size: 5em;
+        font-size: 6em;
     }
     .background-contact {
         height: calc(100vh - 100px);
@@ -167,7 +175,7 @@
 }
 
 .page-me h2 {
-    font-family: DosisMedium, sans-serif;
+    font-family: DosisExtraLight, sans-serif;
     color: lawngreen;
     text-align: center;
     font-size: 1.7em;
@@ -235,10 +243,8 @@
     }
 
     .page-me h2 {
-        font-size: 3em;
+        font-size: 3.5em;
         font-family: DosisExtraLight, sans-serif;
-        background-color: lawngreen;
-        color: white;
         width: 100%;
         margin: 8% 0 8% 0;
     }
@@ -262,7 +268,7 @@
 
     .page-me-block--second h3 {
         font-family: DosisLight, sans-serif;
-        font-size: 2em;
+        font-size: 1.8em;
     }
 }
 
@@ -280,7 +286,7 @@
 }
 
 .page-work h2 {
-    font-family: DosisMedium, sans-serif;
+    font-family: DosisExtraLight, sans-serif;
     color: turquoise;
     text-align: center;
     font-size: 1.7em;
@@ -347,11 +353,10 @@
 
     .page-work h2 {
         padding-left: 10px;
-        font-size: 3em;
+        font-size: 3.5em;
         font-family: DosisExtraLight, sans-serif;
         margin: 8% 0 8% 0;
-        background-color: turquoise;
-        color: white;
+        color: turquoise;
         width: 100%
     }
 
@@ -390,7 +395,7 @@
 }
 
 .page-contact h2 {
-    font-family: DosisMedium, sans-serif;
+    font-family: DosisExtraLight, sans-serif;
     color: slateblue;
     text-align: center;
     font-size: 1.7em;
@@ -471,10 +476,9 @@ textarea:focus {
     }
 
     .page-contact h2 {
-        font-size: 3em;
+        font-size: 3.5em;
         font-family: DosisExtraLight, sans-serif;
-        background-color: slateblue;
-        color: white;
+        color: slateblue;
         margin: 8% 0 8% 0;
     }
 
