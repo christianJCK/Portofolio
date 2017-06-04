@@ -1,3 +1,510 @@
-body {
-    color: red;
+.body {
+    height: calc(100vh - 55px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .body {
+        height: calc(100vh - 100px);
+    }
+}
+
+.flash-notice {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+}
+
+.flash-notice p {
+    color: black;
+    font-size: 0.9em;
+    font-family: DosisLight, sans-serif;
+    background-color: white;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .flash-notice p {
+        font-size: 1.5em;
+    }
+}
+
+
+/* main background */
+
+.background-main {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.background-main h1 {
+    color: white;
+    position: absolute;
+    font-family: DosisLight, sans-serif;
+    margin: 0;
+    text-shadow: 10px 10px 0 slateblue, -10px -10px turquoise;
+    -webkit-animation:colorchange 10s infinite ease-in-out;
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        text-shadow: 10px 10px 0 slateblue, -10px -10px turquoise;
+    }
+    50% {
+        text-shadow: -10px -10px 0 turquoise, 10px 10px slateblue;
+        color: black;
+    }
+    100% {
+        text-shadow: 10px 10px 0 slateblue, -10px -10px turquoise;
+    }
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    font-size: 0.4em;
+    color: grey;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .background-main h1 {
+        font-size: 4em;
+    }
+
+    .copyright {
+        font-size: 0.8em;
+    }
+}
+
+/* section */
+
+.background-me {
+    font-family: DosisExtraLight, sans-serif;
+    background-color: lawngreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 55px);
+    width: 100vw;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+}
+
+.background-me h1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .background-me h1 {
+        font-size: 6em;
+    }
+    .background-me {
+        height: calc(100vh - 100px);
+    }
+}
+
+.background-work {
+    font-family: DosisExtraLight, sans-serif;
+    background-color: turquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 55px);
+    width: 100vw;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+}
+
+.background-work h1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .background-work h1 {
+        font-size: 6em;
+    }
+    .background-work {
+        height: calc(100vh - 100px);
+    }
+}
+
+.background-contact {
+    font-family: DosisExtraLight, sans-serif;
+    background-color: slateblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 55px);
+    width: 100vw;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+}
+
+.background-contact h1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .background-contact h1 {
+        font-size: 6em;
+    }
+    .background-contact {
+        height: calc(100vh - 100px);
+    }
+}
+
+/* page-me */
+
+.page-me {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: none;
+    align-items: center;
+    height: calc(100vh - 55px);
+    width: 100vw;
+    background-color: white;
+}
+
+.page-me h2 {
+    font-family: DosisExtraLight, sans-serif;
+    color: lawngreen;
+    text-align: center;
+    font-size: 1.7em;
+    margin: 32px 0 32px 0;
+}
+
+.page-me p {
+    text-align: justify;
+    font-size: 1em;
+}
+
+.page-me-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-me-block--first {
+    display: flex;
+    flex: 1;
+    width: 100%
+}
+
+.page-me-block--second {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.page-me-block--second ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.page-me-block--second a {
+    font-family: DosisLight, sans-serif;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: lawngreen;
+}
+
+.page-me-block--second h3:hover {
+    text-decoration: none;
+    color: white;
+    background-color: lawngreen;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .page-me {
+        height: calc(100vh - 100px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .page-me .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-me h2 {
+        font-size: 3.5em;
+        font-family: DosisExtraLight, sans-serif;
+        width: 100%;
+        margin: 8% 0 8% 0;
+    }
+
+    .page-me p {
+        text-align: justify;
+        font-size: 1.2em;
+    }
+
+    .page-me-block {
+        flex-direction: row;
+    }
+
+    .page-me-block--first {
+        padding: 10px 0 10px 0;
+    }
+
+    .page-me-block--second {
+        padding: 10px 0 10px 0;
+    }
+
+    .page-me-block--second h3 {
+        font-family: DosisLight, sans-serif;
+        font-size: 1.8em;
+    }
+}
+
+/* page-work */
+
+.page-work {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: none;
+    align-items: center;
+    height: calc(100vh - 55px);
+    width: 100vw;
+    background-color: white;
+}
+
+.page-work h2 {
+    font-family: DosisExtraLight, sans-serif;
+    color: turquoise;
+    text-align: center;
+    font-size: 1.7em;
+    margin: 32px 0 32px 0;
+}
+
+.page-work-projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-work-projects--block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 10px;
+}
+
+.page-work-projects--block h3 {
+    text-align: center;
+    color: turquoise;
+    font-family: DosisMedium, sans-serif;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+    width: 60%;
+}
+
+.page-work-projects--block a {
+    text-decoration: none;
+    color: turquoise;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.page-work-projects--block a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: turquoise;
+}
+
+.img-project {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 1px darkgrey;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .page-work {
+        height: calc(100vh - 100px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .page-work .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-work h2 {
+        padding-left: 10px;
+        font-size: 3.5em;
+        font-family: DosisExtraLight, sans-serif;
+        margin: 8% 0 8% 0;
+        color: turquoise;
+        width: 100%
+    }
+
+    .page-work-projects {
+        flex-direction: row;
+    }
+
+    .img-project {
+        height: 200px;
+    }
+
+    .page-work-projects--block {
+        margin: 15px;
+    }
+
+    .page-work-projects--block h3 {
+        font-size: 2em;
+    }
+
+    .page-work-projects--block p {
+        font-size: 1.2em;
+    }
+}
+
+/* page-contact */
+
+.page-contact {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: none;
+    align-items: center;
+    height: calc(100vh - 55px);
+    width: 100vw;
+    background-color: white;
+}
+
+.page-contact h2 {
+    font-family: DosisExtraLight, sans-serif;
+    color: slateblue;
+    text-align: center;
+    font-size: 1.7em;
+    margin: 32px 0 32px 0;
+}
+
+.page-contact-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-contact-block--first {
+    text-align: justify;
+    font-size: 1em;
+}
+
+.page-contact-block--second {
+    width: 100%;
+    color: slateblue;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid slateblue;
+}
+
+input:focus {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid purple;
+}
+
+label {
+    width: 100%;
+    margin-top: 20px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 30vh;
+    border: 1px solid slateblue;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid purple;
+}
+
+.submit-btn {
+    width: 100%;
+    margin: 15px 0 15px 0;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    background-color: inherit;
+    font-size: 1.2em;
+}
+
+.submit-btn:hover {
+    background-color: slateblue;
+    color: white;
+}
+
+.submit-btn:focus {
+    border: 0;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .page-contact {
+        height: calc(100vh - 100px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .page-contact h2 {
+        font-size: 3.5em;
+        font-family: DosisExtraLight, sans-serif;
+        color: slateblue;
+        margin: 8% 0 8% 0;
+    }
+
+    .page-contact p {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    textarea {
+        height: 250px;
+    }
+
+    .submit-btn {
+        font-size: 2em;
+    }
 }
