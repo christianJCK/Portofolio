@@ -66,9 +66,22 @@
     }
 }
 
+.copyright {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    font-size: 0.4em;
+    color: grey;
+}
+
 @media only screen and (min-device-width: 768px) {
     .background-main h1 {
         font-size: 4em;
+    }
+
+    .copyright {
+        font-size: 0.8em;
     }
 }
 
@@ -483,7 +496,7 @@ textarea:focus {
     }
 
     .page-contact p {
-        text-align: justify;
+        text-align: center;
         font-size: 1.2em;
     }
 

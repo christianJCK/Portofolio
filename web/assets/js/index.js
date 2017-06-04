@@ -22,7 +22,7 @@ $(document).ready(function() {
         hideElement(".pageContent");
         showElement(".page-" + buttonClicked);
         $(".background-me, .background-work, .background-contact").slideUp( "normal" );
-        $(".button").not('.button-' + buttonClicked).removeClass('active');
+        $(".button").removeClass('active');
         $(this).addClass('active');
     });
 
