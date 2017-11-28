@@ -7,7 +7,7 @@
 
 @media only screen and (min-device-width: 768px) {
     .body {
-        height: calc(100vh - 100px);
+        height: calc(100vh - 62px);
     }
 }
 
@@ -89,16 +89,16 @@
 
 .background-me {
     font-family: DosisExtraLight, sans-serif;
-    background-color: lawngreen;
-    display: flex;
+    background-color: springgreen;
+    display: none;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: calc(100vh - 55px);
     width: 100vw;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     position: absolute;
-    opacity: 0;
     z-index: 2;
 }
 
@@ -112,7 +112,7 @@
         font-size: 6em;
     }
     .background-me {
-        height: calc(100vh - 100px);
+        height: calc(100vh - 62px);
     }
 }
 
@@ -141,7 +141,7 @@
         font-size: 6em;
     }
     .background-work {
-        height: calc(100vh - 100px);
+        height: calc(100vh - 62px);
     }
 }
 
@@ -170,7 +170,7 @@
         font-size: 6em;
     }
     .background-contact {
-        height: calc(100vh - 100px);
+        height: calc(100vh - 62px);
     }
 }
 
@@ -182,14 +182,17 @@
     position: absolute;
     display: none;
     align-items: center;
-    height: calc(100vh - 55px);
     width: 100vw;
     background-color: white;
 }
 
+.page-me .container {
+    justify-content: center;
+}
+
 .page-me h2 {
     font-family: DosisExtraLight, sans-serif;
-    color: lawngreen;
+    color: springgreen;
     text-align: center;
     font-size: 1.7em;
     margin: 32px 0 32px 0;
@@ -230,19 +233,19 @@
     font-family: DosisLight, sans-serif;
     font-size: 1.4em;
     text-decoration: none;
-    color: lawngreen;
+    color: springgreen;
 }
 
 .page-me-block--second h3:hover {
     text-decoration: none;
     color: white;
-    background-color: lawngreen;
+    background-color: springgreen;
 }
 
 @media only screen and (min-device-width: 768px) {
     .page-me {
-        height: calc(100vh - 100px);
-        display: flex;
+        height: calc(100vh - 62px);
+        display: none;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -256,15 +259,16 @@
     }
 
     .page-me h2 {
-        font-size: 3.5em;
+        font-size: 3em;
         font-family: DosisExtraLight, sans-serif;
         width: 100%;
-        margin: 8% 0 8% 0;
+        margin-top: 0;
+        margin-bottom: 60px;
     }
 
     .page-me p {
         text-align: justify;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .page-me-block {
@@ -281,7 +285,7 @@
 
     .page-me-block--second h3 {
         font-family: DosisLight, sans-serif;
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 }
 
@@ -293,9 +297,12 @@
     position: absolute;
     display: none;
     align-items: center;
-    height: calc(100vh - 55px);
     width: 100vw;
     background-color: white;
+}
+
+.page-work .container {
+    justify-content: center;
 }
 
 .page-work h2 {
@@ -350,8 +357,8 @@
 
 @media only screen and (min-device-width: 768px) {
     .page-work {
-        height: calc(100vh - 100px);
-        display: flex;
+        height: calc(100vh - 62px);
+        display: none;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -366,11 +373,12 @@
 
     .page-work h2 {
         padding-left: 10px;
-        font-size: 3.5em;
+        font-size: 3em;
         font-family: DosisExtraLight, sans-serif;
-        margin: 8% 0 8% 0;
         color: turquoise;
-        width: 100%
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 60px;
     }
 
     .page-work-projects {
@@ -378,7 +386,8 @@
     }
 
     .img-project {
-        height: 200px;
+        height: auto;
+        width: 100%;
     }
 
     .page-work-projects--block {
@@ -390,7 +399,7 @@
     }
 
     .page-work-projects--block p {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 }
 
@@ -402,9 +411,15 @@
     position: absolute;
     display: none;
     align-items: center;
-    height: calc(100vh - 55px);
     width: 100vw;
     background-color: white;
+}
+
+.page-contact .container {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .page-contact h2 {
@@ -482,22 +497,23 @@ textarea:focus {
 
 @media only screen and (min-device-width: 768px) {
     .page-contact {
-        height: calc(100vh - 100px);
-        display: flex;
+        height: calc(100vh - 62px);
+        display: none;
         align-items: center;
         flex-direction: column;
     }
 
     .page-contact h2 {
-        font-size: 3.5em;
+        font-size: 3em;
         font-family: DosisExtraLight, sans-serif;
         color: slateblue;
-        margin: 8% 0 8% 0;
+        margin-top: 0;
+        margin-bottom: 60px;
     }
 
     .page-contact p {
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     textarea {
