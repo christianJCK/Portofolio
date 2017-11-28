@@ -5,7 +5,7 @@ $(document).ready(function() {
     $(".button").mouseover(function () {
         var buttonType = $(this).attr('data-button-type');
         if(buttonType != buttonClicked){
-            //showElement(".background-" + buttonType);
+            showElement(".background-" + buttonType);
 
             $(".background-main").hide();
         }
@@ -17,7 +17,7 @@ $(document).ready(function() {
         if(buttonClicked == ''){
             $(".background-main").fadeIn();
         }
-        //hideElement(".background-me, .background-work, .background-contact");
+        hideElement(".background-me, .background-work, .background-contact");
     });
 
     $(".button").click(function() {
