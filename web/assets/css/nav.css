@@ -16,9 +16,8 @@
 .button-me,
 .button-work,
 .button-contact {
-    height: 10px;
-    width: 10px;
-    border-radius: 50px;
+    height: 20px;
+    width: 20px;
     margin: 25px;
     cursor: pointer;
     transition: all .1s ease-in-out;
@@ -27,17 +26,14 @@
 }
 
 .button-me:hover {
-    transform: scale(2.7);
-    background-color: lawngreen;
+    background-color: springgreen;
 }
 
 .button-work:hover {
-    transform: scale(2.7);
     background-color: turquoise;
 }
 
 .button-contact:hover {
-    transform: scale(2.7);
     background-color: slateblue;
 }
 
@@ -48,8 +44,6 @@
     .button-contact {
         height: 12px;
         width: 12px;
-        border-radius: 50px;
-        margin: 44px;
         cursor: pointer;
         transition: all .1s ease-in-out;
         background-color: lightgrey;
@@ -58,7 +52,7 @@
     .button-me:hover,
     .button-me.active {
         transform: scale(2.5);
-        background-color: lawngreen;
+        background-color: springgreen;
     }
 
     .button-work:hover,
